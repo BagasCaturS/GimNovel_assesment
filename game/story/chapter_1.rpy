@@ -4,8 +4,10 @@ label chapter_1:
     'Lucien Vale berjalan di atas trotoar. Ia membiarkan earphone-nya mati. Ia membutuhkan keheningan mutlak untuk memastikan setiap langkahnya adalah miliknya sendiri. Ia memiliki keyakinan dingin: ia mampu menulis ulang realitas dengan memengaruhi mimpi orang lain' 
     
     '(Dream Infiltration)'
-    show lucien monolog at center
-    with dissolve
+
+    hide bg bg_chapter_1 with dissolve
+
+    show lucien monolog at center with dissolve
     lucien 'Hanya meyakinkan diri sendiri bahwa hari ini adalah hari yang benar-benar baru. Hari yang belum pernah ada sebelumnya.'
     hide lucien with dissolve
 
@@ -58,6 +60,7 @@ label shadow_anchor:
     hide marcus with dissolve
     hide lucien with dissolve
     
+    jump mentor_code
     return
 
 label mentor_code:
@@ -72,6 +75,7 @@ label mentor_code:
     prof 'Aku tahu, ini bertentangan dengan semua yang kuajarkan tentang Konsensus. Tapi Konsensus yang represif harus dihancurkan.'
     prof 'Tempat terbaik untuk menanamkan ingatan adalah di Gedung Arsip Lama (Basement 3). Kelembapan di sana akan melindungi sinyalmu. Temui Evelyn di Kamar Asrama-mu, itu Base Camp utamamu.'
 
+    hide prof with dissolve
     jump titik_infiltration
     return
 
@@ -121,5 +125,5 @@ label nexus:
     show lucien normal at center with dissolve
     'Lucien menatap gerbang pertama, bersiap untuk misi pertamanya.'
     hide lucien with dissolve
-    
+
     return
