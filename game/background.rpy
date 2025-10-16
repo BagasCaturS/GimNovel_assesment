@@ -1,1 +1,6 @@
 image bg bg_chapter_1 = "images/bg/chapter_1.png"
+image bg bg2 = "images/bg/jalanan_kampus.jpg"
+image bg bg3 = "images/bg/studio_desain.jpg"
+image bg bg4 = "images/bg/ruang_Filsafat.jpg"
+image bg bg5 = "images/bg/kamar_asrama.jpg"
+image bg bg6 = "images/bg/ruang hampa.jpg"
