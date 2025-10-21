@@ -4,7 +4,7 @@ label chapter_1:
 
     'Lucien Vale berjalan di atas trotoar. Ia membiarkan earphone-nya mati. Ia membutuhkan keheningan mutlak untuk memastikan setiap langkahnya adalah miliknya sendiri.'
     'Ia memiliki keyakinan dingin: ia mampu menulis ulang realitas dengan memengaruhi mimpi orang lain (Dream Infiltration).'
-    scene bg bg2 with fade 
+    scene bg jalananKampus with fade 
 
     show lucien monolog at center
     with dissolve
@@ -18,9 +18,9 @@ label chapter_1:
 
 label strategist_design: 
     'Lucien berbelok, dan Studio Desain Fakultas, pusat ambisinya, menjulang. Inilah Base Camp rahasianya.'
-    
-    scene bg bg3 with fade 
-    
+
+    scene bg studioDesain with fade
+
     'Di mejanya, ia menemukan Sketsa Pusaran. Itu adalah pola pusaran air rumit dengan titik biru kobalt di tengahnya, sebuah Master Plan dari misi mereka.'
 
     'Evelyn Crestfield adalah The Strategist. Ia menghampiri Lucien.'
@@ -68,7 +68,7 @@ label shadow_anchor:
 
 label mentor_code:
 
-    scene bg bg4 with fade 
+    scene bg ruangFilsafat with fade
 
     show lucien senyumPalsu at center with dissolve
     'Lucien menemukan Profesor Alden Rowan, The Mentor, di tengah tumpukan buku-buku lama.'
@@ -88,7 +88,7 @@ label mentor_code:
 
 label titik_infiltration:
     play music Point_of_No_Return fadein 1.0
-    scene bg bg5 with fade 
+    scene bg kamarAsrama with fade
 
     'Malam tiba. Kamar Asrama Lucien kini menjadi Ruang Kendali utama. Lucien berbaring di kasur, sensor dipasang. Marcus duduk di samping, memegang monitor.'
 
@@ -118,7 +118,7 @@ label titik_infiltration:
 
 label nexus: 
     play music Nexus_Ambient fadein 1.0
-    scene bg bg6 with fade 
+    scene bg ruangHampa with fade 
 
     show serena bicaraSerius at center with dissolve
     'Lucien tiba di lapisan kesadaran yang lain. Serena Aisley, The Arsitek, menunggunya.'

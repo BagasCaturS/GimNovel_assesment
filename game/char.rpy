@@ -24,4 +24,7 @@ define serena = Character("Serena Aisley", color="#c8ffc8")
 image serena bicaraSerius = "images/char/Serena/Serena bicara serius.png"
 image serena bicara = "images/char/Serena/Serena bicara.png"
 
-
+define dewan = Character("Dewan", color="#c8ffc8")
+image dewan marah = "images/char/Dewan/Dewan angry.png"
+image dewan cold = "images/char/Dewan/Dewan cold.png"
+image dewan rage = "images/char/Dewan/Dewan rage.png"
