@@ -1,1 +1,6 @@
 image bg bg_chapter_1 = "images/bg/chapter_1.png"
+image bg jalananKampus = "images/bg/jalanan_kampus.jpg"
+image bg studioDesain = "images/bg/studio_desain.jpg"
+image bg ruangFilsafat = "images/bg/ruang_Filsafat.jpg"
+image bg kamarAsrama = "images/bg/kamar_asrama.jpg"
+image bg ruangHampa = "images/bg/ruang hampa.jpg"

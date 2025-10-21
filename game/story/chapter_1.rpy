@@ -1,13 +1,13 @@
 label chapter_1:
+    play music blue_edge fadein 1.0
     scene bg bg_chapter_1 with fade 
 
-    'Lucien Vale berjalan di atas trotoar. Ia membiarkan earphone-nya mati. Ia membutuhkan keheningan mutlak untuk memastikan setiap langkahnya adalah miliknya sendiri. Ia memiliki keyakinan dingin: ia mampu menulis ulang realitas dengan memengaruhi mimpi orang lain' 
-    
-    '(Dream Infiltration)'
+    'Lucien Vale berjalan di atas trotoar. Ia membiarkan earphone-nya mati. Ia membutuhkan keheningan mutlak untuk memastikan setiap langkahnya adalah miliknya sendiri.'
+    'Ia memiliki keyakinan dingin: ia mampu menulis ulang realitas dengan memengaruhi mimpi orang lain (Dream Infiltration).'
+    scene bg jalananKampus with fade 
 
-    hide bg bg_chapter_1 with dissolve
-
-    show lucien monolog at center with dissolve
+    show lucien monolog at center
+    with dissolve
     lucien 'Hanya meyakinkan diri sendiri bahwa hari ini adalah hari yang benar-benar baru. Hari yang belum pernah ada sebelumnya.'
     hide lucien with dissolve
 
@@ -18,6 +18,8 @@ label chapter_1:
 
 label strategist_design: 
     'Lucien berbelok, dan Studio Desain Fakultas, pusat ambisinya, menjulang. Inilah Base Camp rahasianya.'
+
+    scene bg studioDesain with fade
 
     'Di mejanya, ia menemukan Sketsa Pusaran. Itu adalah pola pusaran air rumit dengan titik biru kobalt di tengahnya, sebuah Master Plan dari misi mereka.'
 
@@ -40,13 +42,13 @@ label strategist_design:
     hide evelyn with dissolve
     hide lucien with dissolve
 
-
+    play music blue_edge fadeout 1.5
     jump shadow_anchor
 
     return
 
 label shadow_anchor: 
-
+    play music Mission_Blueprint fadein 1.0
     'Marcus Hale, The Anchor, Datang menghampiri.'
     
     show marcus normal at right with dissolve
@@ -61,9 +63,13 @@ label shadow_anchor:
     hide lucien with dissolve
     
     jump mentor_code
+
     return
 
 label mentor_code:
+
+    scene bg ruangFilsafat with fade
+
     show lucien senyumPalsu at center with dissolve
     'Lucien menemukan Profesor Alden Rowan, The Mentor, di tengah tumpukan buku-buku lama.'
     hide lucien with dissolve
@@ -74,12 +80,15 @@ label mentor_code:
     show prof bijaksana at right with dissolve
     prof 'Aku tahu, ini bertentangan dengan semua yang kuajarkan tentang Konsensus. Tapi Konsensus yang represif harus dihancurkan.'
     prof 'Tempat terbaik untuk menanamkan ingatan adalah di Gedung Arsip Lama (Basement 3). Kelembapan di sana akan melindungi sinyalmu. Temui Evelyn di Kamar Asrama-mu, itu Base Camp utamamu.'
-
     hide prof with dissolve
+
+    play music Mission_Blueprint fadeout 1.5
     jump titik_infiltration
     return
 
 label titik_infiltration:
+    play music Point_of_No_Return fadein 1.0
+    scene bg kamarAsrama with fade
 
     'Malam tiba. Kamar Asrama Lucien kini menjadi Ruang Kendali utama. Lucien berbaring di kasur, sensor dipasang. Marcus duduk di samping, memegang monitor.'
 
@@ -102,12 +111,14 @@ label titik_infiltration:
     hide marcus with dissolve
 
     'Begitu kapsul itu bekerja, kesadaran Lucien segera jatuh.' 
-    
+    play music Point_of_No_Return fadeout 1.5
     jump nexus
     return
 
 
 label nexus: 
+    play music Nexus_Ambient fadein 1.0
+    scene bg ruangHampa with fade 
 
     show serena bicaraSerius at center with dissolve
     'Lucien tiba di lapisan kesadaran yang lain. Serena Aisley, The Arsitek, menunggunya.'
@@ -125,5 +136,14 @@ label nexus:
     show lucien normal at center with dissolve
     'Lucien menatap gerbang pertama, bersiap untuk misi pertamanya.'
     hide lucien with dissolve
-
+    menu gerbang:
+        "Jalan mana yang akan kau pilih?"
+        "Gerbang kiri":
+            return
+        "Gerbang tengah":
+            return
+        "Gerbang kanan":
+            return
+        
+    stop music 
     return
