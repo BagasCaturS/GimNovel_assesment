@@ -19,6 +19,7 @@ label chapter_1:
 label strategist_design: 
     'Lucien berbelok, dan Studio Desain Fakultas, pusat ambisinya, menjulang. Inilah Base Camp rahasianya.'
 
+
     scene bg studioDesain with fade
 
     'Di mejanya, ia menemukan Sketsa Pusaran. Itu adalah pola pusaran air rumit dengan titik biru kobalt di tengahnya, sebuah Master Plan dari misi mereka.'
@@ -125,7 +126,7 @@ label nexus:
     hide serena with dissolve
 
     show serena bicara at right with dissolve
-    serena 'Kau datang, Lucien. The Nexus adalah jembatan. Di sinilah kau memilih mimpi mana yang akan kau sabotase.'
+    serena 'Kau datang, Lucien. Nexus adalah jembatan. Di sinilah kau memilih mimpi mana yang akan kau sabotase.'
 
     serena 'Gerbang itu adalah mimpi para pejabat. Kau hanya bisa memilih satu malam ini. Di dalamnya, ada lima Titik Patah yang akan menentukan lima takdir berbeda untuk realitas Elyndra.'
     hide serena with dissolve
@@ -136,14 +137,7 @@ label nexus:
     show lucien normal at center with dissolve
     'Lucien menatap gerbang pertama, bersiap untuk misi pertamanya.'
     hide lucien with dissolve
-    menu gerbang:
-        "Jalan mana yang akan kau pilih?"
-        "Gerbang kiri":
-            return
-        "Gerbang tengah":
-            return
-        "Gerbang kanan":
-            return
-        
+
     stop music 
+    jump chapter_2
     return
