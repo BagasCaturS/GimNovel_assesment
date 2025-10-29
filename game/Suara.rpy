@@ -1,5 +1,0 @@
-﻿define audio.Nexus_Ambient = "audio/Nexus_Ambient.mp3"
-define audio.Point_of_No_Return = "audio/Point_of_No_Return.mp3"
-define audio.Mission_Blueprint = "audio/Mission_Blueprint.mp3"
-define audio.SFX_Pintu = "audio/SFX_Pintu.mp3"
-define audio.blue_edge = "audio/blue_edge.mp3"

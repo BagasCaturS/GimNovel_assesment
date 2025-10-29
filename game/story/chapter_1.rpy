@@ -19,6 +19,7 @@ label chapter_1:
 label strategist_design: 
     'Lucien berbelok, dan Studio Desain Fakultas, pusat ambisinya, menjulang. Inilah Base Camp rahasianya.'
 
+
     scene bg studioDesain with fade
 
     'Di mejanya, ia menemukan Sketsa Pusaran. Itu adalah pola pusaran air rumit dengan titik biru kobalt di tengahnya, sebuah Master Plan dari misi mereka.'
@@ -138,4 +139,5 @@ label nexus:
     hide lucien with dissolve
 
     stop music 
+    jump chapter_2
     return

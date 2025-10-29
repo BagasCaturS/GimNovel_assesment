@@ -1,7 +1,14 @@
 label chapter_2:
     play music Nexus_Ambient fadein 1.0
-    scene bg ruangHampa with fade
+    scene bg bg_chapter_2 with fade 
     'Lucien merasakan dinginnya udara The Nexus, ruang hampa yang dingin di bawah langit keperakan yang suram.'
+    
+    jump pilihan_gerbang
+    return
+# Buat akibat dari setiap keputusan yang diambil
+
+label pilihan_gerbang:
+    scene bg ruangHampa with fade
     'Di depannya, Serena Aisley, The Arsitek, menatap tiga gerbang bercahaya yang berputar pelan di kejauhan.'
     show serena bicaraSerius at center with dissolve
 
@@ -20,11 +27,12 @@ label chapter_2:
     menu gerbang:
             "gerbang mana yang akan kamu pilih?"
             "Gerbang Logika":
+                jump gerbang_logika
                 return
             "Gerbang Ambisi":
+                jump gerbang_ambisi
                 return
             "Gerbang Ketakutan":
+                jump gerbang_ketakutan
                 return
     return
-
-# Buat akibat dari setiap keputusan yang diambil
