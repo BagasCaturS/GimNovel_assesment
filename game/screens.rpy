@@ -294,7 +294,7 @@ screen navigation():
 
         # xpos gui.navigation_xpos
         xalign 0.5
-        yalign 0.5
+        yalign 0.6
 
         spacing gui.navigation_spacing
 

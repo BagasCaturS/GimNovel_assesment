@@ -36,3 +36,4 @@ label pilihan_gerbang:
                 jump gerbang_ketakutan
                 return
     return
+# buat menjadi terbagi 3 gitu jadi misalny true ending harus dari gate 1 lalu 2, 3 gtu2
