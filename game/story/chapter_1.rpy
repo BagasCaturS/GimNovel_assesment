@@ -1,4 +1,4 @@
-label chapter_1:
+﻿label chapter_1:
     play music blue_edge fadein 1.0
     scene bg bg_chapter_1 with fade 
 
@@ -135,7 +135,7 @@ label nexus:
     hide serena with dissolve
 
     show lucien normal at center with dissolve
-    'Lucien menatap gerbang pertama, bersiap untuk misi pertamanya.'
+    'Lucien menatap tiga gerbang, bersiap untuk misi pertamanya.'
     hide lucien with dissolve
 
     stop music 

@@ -161,6 +161,8 @@ style say_dialogue:
 
     adjust_spacing False
 
+    color "#000000"
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -1621,3 +1623,45 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+# Screen kustom untuk pemilihan 3 gerbang visual
+screen pilihan_gerbang_visual():
+
+    tag menu
+
+    # 'hbox' (horizontal box) akan menyusun 3 tombol
+    # secara berdampingan dari kiri ke kanan.
+    hbox:
+        # Posisikan kotak ini di tengah layar
+        xalign 0.5  # Tengah horizontal
+        yalign 0.5  # Tengah vertikal
+        
+        # Beri jarak 30 piksel antar tombol
+        spacing 30 
+
+        # --- Tombol Gerbang Logika ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_logika_off" 
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_logika_on" 
+            
+            action Jump("gerbang_logika")
+
+        # --- Tombol Gerbang Ambisi ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_ambisi_off"
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_ambisi_on"
+            
+            action Jump("gerbang_ambisi")
+
+        # --- Tombol Gerbang Ketakutan ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_ketakutan_off"
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_ketakutan_on"
+            
+            action Jump("gerbang_ketakutan")
