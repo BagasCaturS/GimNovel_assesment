@@ -31,6 +31,14 @@ label strategist_design:
 
     evelyn 'Pagi, Lucien. Persiapan semalam sudah final.'
 
+    menu:
+        'Pagi, Lucien. Persiapan semalam sudah final.'
+
+        'Pagi juga, Evelyn':
+            # Tambahin optional dialog
+            show lucien calm at left with dissolve
+            lucien 'pagi juga, Evelyn'
+
     evelyn 'Formula tidurnya sudah siap, berbasis stimulus gelombang theta yang kita dapat dari Alden. Kita harus mulai malam ini.'
 
 

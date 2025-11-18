@@ -22,11 +22,13 @@ label pilihan_gerbang:
 
     hide serena with dissolve
 
-    show lucien lookAround at center with dissolve
+    show lucien monolog at center with dissolve
     'Evelyn, telah merencanakan untuk memulai dengan Kepala Dewan Legislatif, karena ia diyakini paling didorong oleh logika kaku yang rapuh.'
+    # hide lucien monolog with dissolve
     
+    show lucien normal at center with dissolve
     'Tapi setiap keputusan ada ditangan mu.'
-    hide lucien lookAround with dissolve
+    hide lucien normal with dissolve
 
     scene bg ruangHampa2 with fade
     # Lucien fokus pada Gerbang Logika.
@@ -34,10 +36,11 @@ label pilihan_gerbang:
     'Pikirkan pilihan mu dengan baik, Lucien. Karena setelah memilih, tidak ada jalan kembali. Selain menyeleasikannya misi ini.'
     hide serena with dissolve
     call screen pilihan_gerbang_visual
+    return
 
 
 label gerbang_logika:
-    
+
     serena 'logika.'
 
     return
@@ -51,5 +54,17 @@ label gerbang_ambisi:
 label gerbang_ketakutan:
     
     serena 'ketakutan.'
+    image lucien blink:
+        "images/char/Lucien/Lucien calm.png"
+        0.1
+        "images/char/Lucien/Lucien kedip mata.png"
+        0.3
+        repeat
+
+    show lucien blink
+    ''
 
     return
+
+
+
