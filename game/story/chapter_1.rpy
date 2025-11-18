@@ -1,4 +1,4 @@
-label chapter_1:
+﻿label chapter_1:
     play music blue_edge fadein 1.0
     scene bg bg_chapter_1 with fade 
 
@@ -30,6 +30,14 @@ label strategist_design:
     with dissolve
 
     evelyn 'Pagi, Lucien. Persiapan semalam sudah final.'
+
+    menu:
+        'Pagi, Lucien. Persiapan semalam sudah final.'
+
+        'Pagi juga, Evelyn':
+            # Tambahin optional dialog
+            show lucien calm at left with dissolve
+            lucien 'pagi juga, Evelyn'
 
     evelyn 'Formula tidurnya sudah siap, berbasis stimulus gelombang theta yang kita dapat dari Alden. Kita harus mulai malam ini.'
 
@@ -135,7 +143,7 @@ label nexus:
     hide serena with dissolve
 
     show lucien normal at center with dissolve
-    'Lucien menatap gerbang pertama, bersiap untuk misi pertamanya.'
+    'Lucien menatap tiga gerbang, bersiap untuk misi pertamanya.'
     hide lucien with dissolve
 
     stop music 

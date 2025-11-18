@@ -161,6 +161,8 @@ style say_dialogue:
 
     adjust_spacing False
 
+    color "#000000"
+
 ## Input screen ################################################################
 ##
 ## This screen is used to display renpy.input. The prompt parameter is used to
@@ -240,20 +242,20 @@ screen quick_menu():
     ## Ensure this appears on top of other screens.
     zorder 100
     # Bagian ini untuk nampilin quick menu, tapi gua matiin dulu karena ganggu tampilan
-    # if quick_menu:
+    if quick_menu:
 
-    #     hbox:
-    #         style_prefix "quick"
-    #         style "quick_menu"
+        hbox:
+            style_prefix "quick"
+            style "quick_menu"
 
-    #         textbutton _("Back") action Rollback()
-    #         textbutton _("History") action ShowMenu('history')
-    #         textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-    #         textbutton _("Auto") action Preference("auto-forward", "toggle")
-    #         textbutton _("Save") action ShowMenu('save')
-    #         textbutton _("Q.Save") action QuickSave()
-    #         textbutton _("Q.Load") action QuickLoad()
-    #         textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Back") action Rollback()
+            textbutton _("History") action ShowMenu('history')
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Save") action ShowMenu('save')
+            textbutton _("Q.Save") action QuickSave()
+            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -1621,3 +1623,45 @@ style slider_vbox:
 style slider_slider:
     variant "small"
     xsize 900
+
+# Screen kustom untuk pemilihan 3 gerbang visual
+screen pilihan_gerbang_visual():
+
+    tag menu
+
+    # 'hbox' (horizontal box) akan menyusun 3 tombol
+    # secara berdampingan dari kiri ke kanan.
+    hbox:
+        # Posisikan kotak ini di tengah layar
+        xalign 0.5  # Tengah horizontal
+        yalign 0.5  # Tengah vertikal
+        
+        # Beri jarak 30 piksel antar tombol
+        spacing 30 
+
+        # --- Tombol Gerbang Logika ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_logika_off" 
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_logika_on" 
+            
+            action Jump("gerbang_logika")
+
+        # --- Tombol Gerbang Ambisi ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_ambisi_off"
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_ambisi_on"
+            
+            action Jump("gerbang_ambisi")
+
+        # --- Tombol Gerbang Ketakutan ---
+        imagebutton:
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            idle "bg gerbang_ketakutan_off"
+            # PERBAIKAN: Nama gambar ada di dalam tanda kutip
+            hover "bg gerbang_ketakutan_on"
+            
+            action Jump("gerbang_ketakutan")
