@@ -1655,7 +1655,7 @@ screen pilihan_gerbang_visual():
             # PERBAIKAN: Nama gambar ada di dalam tanda kutip
             hover "bg gerbang_ambisi_on"
             
-            action Jump("gerbang_ambisi")
+            action Jump("pilihan_gerbang_repeat")  # Kembali ke label pilihan_gerbang_repeat
 
         # --- Tombol Gerbang Ketakutan ---
         imagebutton:
@@ -1664,4 +1664,4 @@ screen pilihan_gerbang_visual():
             # PERBAIKAN: Nama gambar ada di dalam tanda kutip
             hover "bg gerbang_ketakutan_on"
             
-            action Jump("gerbang_ketakutan")
+            action Jump("pilihan_gerbang_repeat")  # Kembali ke label pilihan_gerbang_repeat

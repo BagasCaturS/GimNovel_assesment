@@ -39,6 +39,10 @@ label strategist_design:
             show lucien calm at left with dissolve
             lucien 'pagi juga, Evelyn'
 
+            show evelyn tenang at right with dissolve
+            evelyn 'Sepertinya baru kali ini lagi kau menyambut balik sapaan ku.'
+
+    show evelyn bicara at right with dissolve
     evelyn 'Formula tidurnya sudah siap, berbasis stimulus gelombang theta yang kita dapat dari Alden. Kita harus mulai malam ini.'
 
 

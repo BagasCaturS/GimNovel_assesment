@@ -27,7 +27,7 @@ image marcus kedipMata = "images/char/Marcus/Marcus kedip mata.png"
 
 define lucien = Character("Lucien Vale", color="#06355c")
 image lucien cemas = "images/char/Lucien/Lucien cemas.png"
-image lucien monolog = "images/char/Lucien/Lucien monolog.png"
+image lucien monoblog = "images/char/Lucien/Lucien monolog.png"
 image lucien normal = "images/char/Lucien/Lucien normal.png"
 image lucien senyumPalsu = "images/char/Lucien/Lucien senyum palsu.png"
 image lucien lookAround = "images/char/Lucien/Lucien look around.png"
