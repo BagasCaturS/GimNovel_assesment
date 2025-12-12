@@ -14,3 +14,7 @@ image bg gerbang_ketakutan_on = "images/bg/Gerbang ketakutan on.png"
 image bg gerbang_ketakutan_off = "images/bg/Gerbang ketakutan off.png"
 image bg gerbang_ambisi_on = "images/bg/Gerbang ambisi on.png"
 image bg gerbang_ambisi_off = "images/bg/Gerbang ambisi off.png"
+
+# Yang belum ada bgnya 
+
+# ruang logika
