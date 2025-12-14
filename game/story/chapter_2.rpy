@@ -71,7 +71,7 @@ label gerbang_logika:
 
 
 label inside_gerbang_logika:
-    scene bg ruang_logika with fade
+    scene bg TEMPLATE with fade
     'Ia muncul di dalam ruangan raksasa — seakan seluruh dunia dibangun oleh kaca steril dan logam dingin.'
     'Setiap langkahnya memantulkan suaranya sendiri.'
 
@@ -93,4 +93,119 @@ label inside_gerbang_logika:
 
     show lucien focus at center with move
     lucien 'Ini Level 1. Aku baru mulai… tapi dunia ini sudah ingin runtuh.'
+    hide lucien with dissolve
+    jump bingkai_titik_patah
 return
+
+label bingkai_titik_patah:
+    $ pilihan = 0
+    scene TEMPLATE with fade
+    'Saat jarinya menyentuh bingkai, dunia pecah.'
+    'Kegelapan melebur menjadi api dan kaca pecah. Jeritan mengambang seperti gema dari ribuan kenangan yang terdistorsi.'
+    
+    show dewan marah at center with dissolve
+    dewan 'Ini… ini yang membuat semuanya hancur…'
+    show dewan marah at right with move
+    hide dewan with dissolve
+    show lucien focus at center with dissolve
+    'Lucien ingin menjangkau, tapi retakan lain muncul di langit mimpi.'
+
+    menu:
+        'Cahaya di lantai berubah, membentuk 3 jalur:'
+
+        'Sentuh bingkai dengan lembut':
+            $ pilihan = 1
+        'Hancurkan bingkai secara paksa':
+            $ pilihan = 2
+        'Tinggalkan bingkai':
+            $ pilihan = 3
+    
+    lucien 'Setiap keputusan membentuk akhir. Aku tidak boleh gegabah…'
+    hide lucien with dissolve
+
+    jump diluar_mimpi
+    return 
+
+label diluar_mimpi:
+    scene bg blank with fade
+    'Di luar mimpi, dunia nyata mulai kacau.'
+    scene bg TEMPLATE with fade
+    'Lampu berkedip. Monitor EEG naik turun liar.'
+    show marcus urgent at center with dissolve
+    marcus 'Lampu berkedip. Monitor EEG naik turun liar.'
+    show marcus urgent at left with move
+
+    show evelyn frantic at center with dissolve
+    evelyn "Tidak! Nexus mendesak dia menyelesaikan pilihan!"
+    show evelyn frantic at right with move
+    hide marcus with dissolve
+    hide evelyn with dissolve
+
+    # pindah lokasi ke mimpi
+    scene bg TEMPLATE with fade
+    show lucien tense at center with dissolve
+    '...'
+    show lucien suprise at center with dissolve
+    serena '(Suara dalam kepala) Hati-hati, Lucien… satu pilihan salah, realitas bisa pecah.'
+
+    jump level_2_scene_6
+    return
+
+label level_2_scene_6:
+    scene bg TEMPLATE with fade
+    'Lucien menatap tiga jalur.'
+
+    lucien 'Apakah rasa sakit masa lalu harus dihapus… atau dimengerti?'
+    lucien 'Atau... tidak kusentuh sama sekali?'
+
+    if pilihan == 1:
+        'Dia membuat keputusan sentuh bingkai dengan lembut'
+    elif pilihan == 2:
+        'Dia membuat keputusan hancurkan bingkai secara paksa'
+    elif pilihan == 3:
+        'Dia membuat keputusan Tinggalkan bingkai'
+
+    
+    'Saat ia menyentuh jalurnya, dunia pecah oleh cahaya biru.'
+
+    jump back_to_nexus_scene_7
+    return
+
+label back_to_nexus_scene_7:
+    scene bg blank with fade
+    'Lucien muncul kembali di The Nexus, tersungkur. Lantai retak-retak seperti kaca yang disiram suhu ekstrem.'
+
+    scene bg ruangHampa2 with fade
+    'Serena kini tampak lebih transparan, hampir tembus pandang.'
+    show serena bicaraSerius at center with dissolve:
+        alpha 0.5
+    serena 'Kau membuat Konsensus bergetar. Realitas berubah.'
+    show serena bicaraSerius at right with move:
+        alpha 0.5
+    show lucien exhausted at center with dissolve
+    show lucien exhausted at left with move
+    lucien 'Aku… cuma memilih satu pintu.'
+    show lucien exhausted at left with dissolve
+    lucien 'Bagaimana bisa ini terjadi?'
+
+    serena 'Tidak.'
+    serena 'Kau memilih jalur nasib.'
+
+    hide lucien with dissolve
+    # show serena bicaraSerius at center with dissolve
+    scene bg ruangHampa with fade
+    show serena bicaraSerius at center with dissolve:
+        alpha 0.5
+    hide serena
+    'Di belakang Serena, tiga pintu kembali muncul — namun kali ini lebih redup, lebih liar.'
+    '3 Pintu.'
+    '2 level.'
+    '1 kebenaran.'
+    'Ending-mu mulai terbentuk.'
+
+    jump scene_8_closing_chapter
+    return
+
+label scene_8_closing_chapter:
+    
+    return
