@@ -25,6 +25,12 @@ image marcus tired = "images/char/Marcus/Marcus tired.png"
 image marcus urgent = "images/char/Marcus/Marcus urgent.png"
 image marcus kedipMata = "images/char/Marcus/Marcus kedip mata.png"
 
+define lucienKecil = Character("Lucien Vale Kecil", color="#0c74c9")
+image lucienKecil mad = "images/char/Lucien kecil/lucien kecil mad.png"
+image lucienKecil nangis = "images/char/Lucien kecil/lucien kecil nangis.png"
+image lucienKecil normal = "images/char/Lucien kecil/lucien kecil normal.png"
+image lucienKecil smile = "images/char/Lucien kecil/lucien kecil smile.png"
+
 define lucien = Character("Lucien Vale", color="#06355c")
 image lucien cemas = "images/char/Lucien/Lucien cemas.png"
 image lucien monolog = "images/char/Lucien/Lucien monolog.png"
@@ -59,3 +65,4 @@ define dewan = Character("Dewan", color="#000000")
 image dewan marah = "images/char/Dewan/Dewan angry.png"
 image dewan cold = "images/char/Dewan/Dewan cold.png"
 image dewan rage = "images/char/Dewan/Dewan rage.png"
+

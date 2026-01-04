@@ -1,5 +1,8 @@
 ﻿image bg bg_chapter_1 = "images/bg/chapter_1.png"
 image bg bg_chapter_2 = "images/bg/chapter_2.png"
+image bg bg_chapter_3 = "images/bg/chapter_3.png"
+image bg bg_chapter_4 = "images/bg/chapter_4.png"
+image bg bg_chapter_5 = "images/bg/chapter_5.png"
 image bg jalananKampus = "images/bg/jalanan_kampus.jpg"
 image bg studioDesain = "images/bg/studio_desain.jpg"
 image bg ruangFilsafat = "images/bg/ruang_Filsafat.jpg"

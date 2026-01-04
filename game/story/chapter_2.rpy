@@ -158,13 +158,14 @@ label level_2_scene_6:
     lucien 'Apakah rasa sakit masa lalu harus dihapus… atau dimengerti?'
     lucien 'Atau... tidak kusentuh sama sekali?'
 
+# ====================================================================================
     if pilihan == 1:
         'Dia membuat keputusan sentuh bingkai dengan lembut'
     elif pilihan == 2:
         'Dia membuat keputusan hancurkan bingkai secara paksa'
     elif pilihan == 3:
         'Dia membuat keputusan Tinggalkan bingkai'
-
+# ====================================================================================
     
     'Saat ia menyentuh jalurnya, dunia pecah oleh cahaya biru.'
 
@@ -403,4 +404,5 @@ label scene_8_closing_chapter:
     show serena bicaraSerius at right with dissolve
     serena 'Bukan orang.'
     serena 'Dan dia sedang mencarimu.'
+    jump chapter_3
     return

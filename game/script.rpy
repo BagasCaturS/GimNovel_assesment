@@ -4,12 +4,16 @@ label start:
     scene bg splashScreen with fade
     menu intro:
         "Mau dimulai dari mana ceritanya?"
-        "From beginning":
-            jump startHere
         "Chapter one":
             jump chapter_1
-        "newest":
-            jump nexus
+        "Chapter two":
+            jump chapter_2
+        "Chapter three":
+            jump chapter_3
+        "Chapter four":
+            jump chapter_4
+        "Chapter five":
+            jump chapter_5
     return
 
 
